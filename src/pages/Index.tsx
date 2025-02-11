@@ -1,4 +1,3 @@
-
 import { Leaf, ShoppingCart, Car, PencilRuler } from "lucide-react";
 import { motion } from "framer-motion";
 
@@ -6,7 +5,7 @@ const Index = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative h-screen flex items-center justify-center bg-gradient-to-b from-accent/20 to-background px-4">
+      <section className="relative h-screen flex items-center justify-center bg-gradient-to-b from-[#F2FCE2] to-white px-4">
         <div className="container max-w-6xl mx-auto text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -102,7 +101,7 @@ const Index = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 px-4 bg-accent/20">
+      <section className="py-20 px-4 bg-gradient-to-t from-[#F2FCE2] to-white">
         <div className="container max-w-6xl mx-auto text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}

@@ -6,19 +6,19 @@
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 162 43% 24%;
+    --foreground: 151 40% 25%;
     
-    --primary: 151 18% 59%;
+    --primary: 142 71% 45%;
     --primary-foreground: 0 0% 100%;
     
-    --secondary: 164 17% 26%;
+    --secondary: 151 40% 25%;
     --secondary-foreground: 0 0% 100%;
     
-    --accent: 86 14% 80%;
-    --accent-foreground: 164 17% 26%;
+    --accent: 142 33% 95%;
+    --accent-foreground: 151 40% 25%;
     
-    --border: 151 18% 59%;
-    --ring: 151 18% 59%;
+    --border: 142 71% 45%;
+    --ring: 142 71% 45%;
     
     --radius: 0.5rem;
   }

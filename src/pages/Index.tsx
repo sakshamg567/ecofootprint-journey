@@ -1,9 +1,12 @@
+
 import { Leaf, ShoppingCart, Car, PencilRuler } from "lucide-react";
 import { motion } from "framer-motion";
+import Navbar from "@/components/Navbar";
 
 const Index = () => {
   return (
     <div className="min-h-screen">
+      <Navbar />
       {/* Hero Section */}
       <section className="relative h-screen flex items-center justify-center bg-gradient-to-b from-[#F2FCE2] to-white px-4">
         <div className="container max-w-6xl mx-auto text-center">

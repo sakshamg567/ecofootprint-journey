@@ -1,4 +1,3 @@
-
 import { Leaf, ShoppingCart, Car, PencilRuler } from "lucide-react";
 import { motion } from "framer-motion";
 import Navbar from "@/components/Navbar";
@@ -8,7 +7,7 @@ const Index = () => {
     <div className="min-h-screen">
       <Navbar />
       {/* Hero Section */}
-      <section className="relative h-screen flex items-center justify-center bg-gradient-to-b from-[#F2FCE2] to-white px-4">
+      <section id="hero" className="relative h-screen flex items-center justify-center bg-gradient-to-b from-[#F2FCE2] to-white px-4">
         <div className="container max-w-6xl mx-auto text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -27,7 +26,7 @@ const Index = () => {
               Understand and reduce your carbon footprint with intelligent tracking across your daily activities.
             </p>
             <button className="bg-primary text-white px-8 py-3 rounded-lg font-semibold transform transition-all hover:scale-105 hover:shadow-lg">
-              Start Tracking Now
+              Get The App Now
             </button>
           </motion.div>
         </div>
@@ -68,7 +67,7 @@ const Index = () => {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.2 }}
-                className="p-6 rounded-xl bg-accent/10 hover:bg-accent/20 transition-colors"
+                className="p-6 rounded-xl bg-amber-50 hover:bg-amber-100 border-amber-300 border transition-colors"
               >
                 <feature.icon className="w-12 h-12 text-primary mb-4" />
                 <h3 className="text-xl font-semibold text-secondary mb-2">
@@ -121,11 +120,11 @@ const Index = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button className="bg-primary text-white px-8 py-3 rounded-lg font-semibold transform transition-all hover:scale-105">
-                Download Extension
+                Download the App
               </button>
-              <button className="bg-secondary text-white px-8 py-3 rounded-lg font-semibold transform transition-all hover:scale-105">
+              {/* <button className="bg-secondary text-white px-8 py-3 rounded-lg font-semibold transform transition-all hover:scale-105">
                 Create Account
-              </button>
+              </button> */}
             </div>
           </motion.div>
         </div>

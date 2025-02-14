@@ -68,7 +68,6 @@ app.post("/analyze", upload.single("image"), async (req, res) => {
         let responseText = response["response"]["candidates"][0]["content"]["parts"][0]["text"] || "{}";
         responseText = responseText.replace(/```/g, "");
         responseText = responseText.replace('json', "");
-        log(responseText)
         
         let structuredResponse = JSON.parse(responseText)
 

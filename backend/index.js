@@ -3,9 +3,12 @@ const express = require("express");
 const multer = require("multer");
 const fs = require("fs");
 const axios = require("axios");
+const path = require("path");
 
 const app = express();
 const upload = multer({ dest: "uploads/" });
+
+app.use(express.static(path.join(__dirname, "dist")));
 
 app.post("/analyze", upload.single("image"), async (req, res) => {
     try {
@@ -83,4 +86,13 @@ app.post("/analyze", upload.single("image"), async (req, res) => {
     }
 });
 
-app.listen(3000, () => console.log("Server running on port 3000..."));
+app.get("/", (req, res) => {
+    res.sendFile(path.join(__dirname, "dist", "index.html"))
+})
+app.get("*", (req,res) => {
+    res.redirect("/")
+})
+
+const PORT = process.env.port || 5000;
+
+app.listen(PORT, () => console.log(`Server running on port : ${PORT}`));
